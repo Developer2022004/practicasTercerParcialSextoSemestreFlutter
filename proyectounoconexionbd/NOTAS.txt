@@ -1,0 +1,22 @@
+PARA HACER USO DE LA BASE DE DATOS DE FLUTTER sqflite, ES NECESARIO COMPILARLO DENTRO DE UN EMULADOR DE ANDROID O BIEN,
+EMPLEANDO EL TELEFONO.
+
+En caso de que no funcione el compilador de adroid es importante revisar las versiones del Gradle archivo que se encuentra en la ruta:
+
+android > gradle > wrapper > gradle-wrapper.properties.
+Revisar la version del mismo y compararla con la version del SDK de Java con el cual se encuentre trabajando.
+Para ello, visita la pagina : https://docs.gradle.org/current/userguide/compatibility.html
+
+Luego revisa la version del gradle del proyecto: distributionUrl=https\://services.gradle.org/distributions/gradle-8.10.2-all.zip
+Si ambas versiones del JDK y del Gradle no se corresponden entre si. Es posible actualizar los recursos, paquetes y dependencias del proyecto.
+
+No obstante, se recomienda eliminar la carpeta "build" del proyecto, posteriormente ingresar a la terminal de VSCode e ingresar los siguientes comandos
+Nota: Cabe recordar, previamente al ingreso de los comandos es necesario vincular el movil en el cual se desea realizar la compilacion de la aplicacion
+esto con el fin de que VSCode descargue los paquetes y dependencias correspondientes para ser compilados en el modelo del telefono.
+
+flutter clean
+
+flutter pub get
+
+flutter run
+
