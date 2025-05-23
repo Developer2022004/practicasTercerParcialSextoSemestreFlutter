@@ -1,0 +1,7 @@
+Para indicarle a flutter que descargue las dependencias ingresamos el siguiente comando a la terminal
+
+flutter pub get
+
+para actualizar el SDK de flutter se emplea el comando
+
+flutter update
